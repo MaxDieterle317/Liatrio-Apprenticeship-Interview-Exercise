@@ -14,3 +14,9 @@ jobs:
               uses: actions/checkout@v4
             - name: Build Docker Image
               run: docker build -t liatrio-app .
+            - name: Run Docker Container
+              run: docker run -d -p 3000:3000 liatrio-app
+            - name: Run Tests via Liatrio's apprentice-action
+              uses: liatrio/github-actions/apprentice-action@master
+
+
