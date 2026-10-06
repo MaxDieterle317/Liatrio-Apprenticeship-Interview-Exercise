@@ -17,7 +17,7 @@ jobs:
             - name: Run Docker Container
               run: docker run -d -p 80:3000 liatrio-app
             - name: Run Tests via Liatrio's apprentice-action
-              uses: liatrio/github-actions/apprentice-action@master
+              uses: Maxdieterle317/github-actions/apprentice-action@patch-1
             - name: Login to Docker Hub
               uses: docker/login-action@v4
               with: 
