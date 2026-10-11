@@ -12,6 +12,7 @@ func main() {
 		return c.JSON(fiber.Map{
 			"message":   "My name is Max Dieterle",
 			"timestamp": time.Now().UnixMilli(),
+			"description": "This is a technical exercise performed for the Liatrio Apprenticeship interview process",
 		})
 	})
 
